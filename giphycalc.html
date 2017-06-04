@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Giphy Calc</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="calc.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+    </head>
+    <body>
+    <form name="Calc">
+        <nav id="nav">
+            <div class="header">
+                <img class="logo" src="https://tctechcrunch2011.files.wordpress.com/2016/02/giphyseriesc.gif?w=738">
+                <div class="text">
+                    <input type="text" name="Input" class="console" placeholder="0">
+                    </input>
+                    <input type="button" name="average" value="AVG" class="average" onclick="avg();">
+                    </input>
+                </div>
+            </div>
+        </nav>
+        <main id="content">
+            <div id="numbers">
+                    <input type="button" class="small-box columns rosy clear" name="clear" value="clear" onclick="reset();">
+                    </input>
+                    <input type="button" class="med-box columns sky seven" name="seven" value="seven" onclick="Calc.Input.value += '7'">
+                    </input>
+                    <input type="button" class="small-box columns sky four" name="four" value="four" onclick="Calc.Input.value += '4'">
+                    </input>
+                    <input type="button" class="small-box columns rosy one" name="one" value="one" onclick="Calc.Input.value += '1'">
+                    </input>
+                    <div id="numbers2">
+                        <input type="button" class="small-box columns purp zero" name="zero" value="zero" onclick="Calc.Input.value += '0'">
+                        </input>
+                    </div>
+            </div>
+            <div id="numbers">
+                    <input type="button" class="small-box columns purp percent" name="percent" value="percent" onclick="Calc.Input.value += '%'">
+                    </input>
+                    <input type="button" class="small-box columns mint eight" name="eight" value="eight" onclick="Calc.Input.value += '8'">
+                    </input>
+                    <input type="button" class="med-box columns mustard five" name="five" value="five" onclick="Calc.Input.value += '5'">
+                    </input>
+                    <input type="button" class="small-box columns mustard two" name="two" value="two" onclick="Calc.Input.value += '2'">
+                    </input>
+            </div>
+            <div id="numbers">
+                    <input type="button" class="med-box columns rosy nine" name="nine" value="nine" onclick="Calc.Input.value += '9'">
+                    </input>
+                    <input type="button" class="big-box columns sky six" name="six" value="six" onclick="Calc.Input.value += '6'">
+                    </input>
+                    <input type="button" class="small-box columns mint three" name="three" value="three" onclick="Calc.Input.value += '3'">
+                    </input>
+                    <input type="button" class="small-box columns mint decimal" name="decimal" value="decimal" onclick="Calc.Input.value += '.'">
+                    </input>
+            </div>
+            <div id="numbers">
+                    <input type="button" class="small-box columns mint divide" name="divide" value="divide" onclick="Calc.Input.value += '/'">
+                    </input>
+                    <input type="button" class="small-box columns rosy multiply" name="multiply" value="multiply" onclick="Calc.Input.value += '*'">
+                    </input>
+                    <input type="button" class="small-box columns purp minus" name="minus" value="minus" onclick="Calc.Input.value += '-'">
+                    </input>
+                    <input type="button" class="small-box columns purp plus" name="plus" value="plus" onclick="Calc.Input.value += '+'">
+                    </input>
+                     <div id="numbers2">
+                        <input type="button" class="med-box columns mustard equal" name="equal" value="equal" onclick="Calc.Input.value = eval(Calc.Input.value)">
+                        </input>
+                    </div>
+            </div>
+        </main>
+        </form>
+
+        <script>
+            
+            function reset() {
+                if (typeof Calc.Input.value == 'number') {
+                    Calc.Input.value = '';
+                }
+            }
+
+            function avg() {
+                num = Calc.Input.value;
+                num = num.split('+');
+                Calc.Input.value = eval(Calc.Input.value)/num.length;
+            }
+        </script>
+    </body>
+</html>

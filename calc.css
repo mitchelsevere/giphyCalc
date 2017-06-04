@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    background-color: rgba(24, 24, 26, 1);
+}
+
+.header {
+    display: flex;
+}
+
+
+/*Height and width of all buttons*/
+
+.columns {
+    width: 280px;
+    height: 200px;
+    background-color: blue;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*Different Sized Containers for Numbers*/
+
+.big-box {
+    height: 32.5vh;
+}
+
+.med-box {
+    height: 25vh;
+}
+
+.small-box {
+    height: 15vh;
+}
+
+
+/*Calculator Console Input Field w/ Text Align*/
+
+.console {
+    height: 36px;
+    width: 70vw;
+    font-size: 1.3rem;
+    outline: none;
+    border-color: #fff;
+    text-align: right;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/*Change input font properties and hover state*/
+
+#content input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);;
+    box-sizing: border-box;
+}
+
+#content input:hover {
+    animation: text 2s infinite;
+}
+
+#nav {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(24, 24, 26, 1);
+    position: fixed;
+    z-index: 99;
+}
+
+.logo {
+    width: 142px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+
+/*Average button and Hover State*/
+
+.average {
+    height: 36px;
+    width: 36px;
+    background-color: rgba(0, 0, 0, 1);
+    border: none;
+    outline: none;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    animation: screen 5s infinite;
+    transition: all 1s ease-in;
+}
+
+.average:hover {
+    width: 72px;
+    font-size: 1.6em;
+}
+
+/*Main Content container*/
+
+#content {
+    margin: 0 auto;
+    width: 1200px;
+    height: 80vh;
+    background-color: rgba(24, 24, 26, 1);
+    display: flex;
+    justify-content: space-around;
+}
+
+#numbers {
+    margin-top: 70px;
+}
+
+#numbers2 {
+    position: absolute;
+}
+
+
+/*Background Colors*/
+
+.rosy {
+    background-color: rgba(230, 92, 92, 1);
+}
+
+.sky {
+    background-color: rgba(0, 184, 229, 1);
+}
+
+.purp {
+    background-color: rgba(137, 47, 229, 1);
+}
+
+.mustard {
+    background-color: rgba(229, 218, 83, 1);
+}
+
+.mint {
+    background-color: rgba(0, 229, 137, 1);
+}
+
+
+/*Tranisitions and Hover States for GIFS */
+
+.clear {
+    transition: background 1s ease-in-out;
+}
+
+.clear:hover {
+    background: url('images/vcr.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+.seven {
+   transition: background 1s ease-in-out; 
+}
+
+.seven:hover {
+    background: url('images/seven.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+.four {
+   transition: background 1s ease-in-out; 
+}
+
+.four:hover {
+    background: url('images/four.gif') no-repeat scroll 0 -130px;
+    background-size: cover;
+}
+
+.one {
+   transition: background 1s ease-in-out; 
+}
+
+.one:hover {
+    background: url('images/one.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+.zero {
+   transition: background 1s ease-in-out, background-color: 0s; 
+   width: 580px;
+}
+
+.zero:hover {
+    background: url('images/zero.gif') no-repeat scroll center;
+    background-size: contain;
+    background-color: rgba(63, 81, 182, 1);
+}
+
+.percent {
+   transition: background 1s ease-in-out, background-color 0s;
+}
+
+.percent:hover {
+    background: url('images/percent.gif') no-repeat scroll center;
+    background-size: contain;
+    background-color: white;
+}
+
+.eight {
+   transition: background 1s ease-in-out; 
+}
+
+.eight:hover {
+    background: url('images/eight.gif') no-repeat scroll 0 -20px;
+    background-size: cover;
+}
+
+.five {
+   transition: background 1s ease-in-out; 
+}
+
+.five:hover {
+    background: url('images/five.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+.two {
+   transition: background 1s ease-in-out; 
+}
+
+.two:hover {
+    background: url('images/two.gif') no-repeat scroll top;
+    background-size: cover;
+}
+
+.nine {
+   transition: background 1s ease-in-out; 
+}
+
+.nine:hover {
+    background: url('images/nine.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+.six {
+   transition: background 1.5s ease-in-out; 
+}
+
+.six:hover {
+    background: url('images/six.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+.three {
+   transition: background 1s ease-in-out; 
+}
+
+.three:hover {
+    background: url('images/three.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+.decimal {
+   transition: background 1s ease-in-out; 
+}
+
+.decimal:hover {
+    background: url('images/decimal.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+.divide {
+   transition: background 1s ease-in-out, background-color 0s;
+}
+
+.divide:hover {
+    background: url('images/divide.gif') no-repeat scroll center;
+    background-size: contain;
+    background-color: rgb(230, 230, 230);
+}
+
+.multiply {
+   transition: background 1s ease-in-out, background-color 0s;
+}
+
+.multiply:hover {
+    background: url('images/multiply.gif') no-repeat scroll center;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+}
+
+.minus {
+   transition: background 1s ease-in-out;
+}
+
+.minus:hover {
+    background: url('images/minus.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+.plus {
+   transition: background 1s ease-in-out;
+}
+
+.plus:hover {
+    background: url('images/add.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+.equal {
+   transition: background 1s ease-in-out;
+}
+
+.equal:hover {
+    background: url('images/equal.gif') no-repeat scroll center;
+    background-size: cover;
+}
+
+
+/*Keyframes for AVG Button Background*/
+
+@keyframes screen {
+    0% {
+        background-color: #4568DC;  
+    }
+    50% {
+        background-color: #14CC79;
+    }
+    100% {
+        background-color: #4568DC; 
+    }
+}
+
+/*Keyframes for Input Button text*/
+@keyframes text {
+    0% {
+        color: rgba(255, 255, 255, 0.2);
+        font-size: 2em;
+        opacity: 0.7;  
+    }
+    50% {
+        color: rgba(255, 255, 255, 1);
+        text-shadow: 2px 2px 4px #000;
+        font-size: 3em; 
+    }
+    100% {
+        color: rgba(255, 255, 255, 0.2);
+        font-size: 2em;
+        opacity: 0.7;
+    }
+}
+
+
